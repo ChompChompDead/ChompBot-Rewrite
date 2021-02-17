@@ -5,6 +5,7 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 
 const token = config.token;
+const mongoURL = config.mongoURL;
 bot.commands = new Collection();
 bot.aliases = new Collection();
 bot.categories = fs.readdirSync("./commands/");
@@ -13,7 +14,7 @@ bot.categories = fs.readdirSync("./commands/");
   require(`./handlers/${handler}`)(bot);
 });
 
-mongoose.connect("mongodb://localhost:27017/ChompBot", {
+mongoose.connect(mongoURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
