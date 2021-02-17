@@ -1,4 +1,5 @@
 {
   "token": "your token HERE",
+  "mongoURL": "mongodb url here",
   "prefix": "c!"
 }
