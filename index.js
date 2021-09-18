@@ -23,3 +23,6 @@ mongoose.connect(mongoURL, {
 console.log("db connected");
 
 bot.login(token);
+
+const GAY_BOT = "gay bot 69"
+console.log(GAY_BOT + " FIRST UPDATE IN 10 YEARS!!!!1!!11!1!")
